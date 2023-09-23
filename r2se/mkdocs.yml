@@ -1,0 +1,168 @@
+site_name: The Road to survey Engineer
+site_description: 通往测绘工程师之路
+site_author: Gravpher@163.com
+site_url: https://r2me.goujianing.com/
+repo_name: George-Gou/r2me
+repo_url: https://github.com/George-Gou/r2me
+copyright: Brought to you by <a href="https://goujianing.ml/">Gravpher</a>. Available freely under the <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 license</a>.
+
+theme:
+  name: 'material'
+  language: 'zh'
+  palette:
+    - scheme: default
+      media: "(prefers-color-scheme: light)"
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: 切换至深色模式
+    - scheme: slate
+      media: "(prefers-color-scheme: dark)"
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/weather-sunny
+        name: 切换至浅色模式
+  icon:
+    logo: fontawesome/brands/google
+    repo: octicons/mark-github-16
+  features:
+    - navigation.top
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - codehilite
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences
+  - markdown.extensions.def_list
+  - attr_list
+  - toc:
+      permalink: true
+
+extra:
+  social:
+    - icon: octicons/globe-16
+      link: https://goujianing.ml/
+
+extra_javascript:
+  - js/katex.js
+  - https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.js
+  - https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/auto-render.min.js
+
+extra_css:
+  - css/katex.css
+  - css/custom.css
+  - https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css
+
+#google_analytics:
+#  - 'UA-160637954-1'
+# - 'auto'
+
+extra_css:
+  - 'stylesheets/extra.css'
+
+extra_javascript:
+  - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
+
+plugins:
+  - search
+  - print-site
+
+extra:
+  social:
+    - icon: octicons/globe-16
+      link: https://george-gou.github.io/
+
+extra_javascript:
+  - js/katex.js
+  - https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.js
+  - https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/auto-render.min.js
+
+extra_css:
+  - css/katex.css
+  - css/custom.css
+  - https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css
+
+google_analytics:
+  - 'UA-160637954-1'
+  - 'auto'
+
+#plugins:
+   # - with-pdf:
+#plugins:
+  #  - with-pdf:
+        #author: WHO
+        #copyright: ANY TEXT
+        #
+        #cover: false
+        #back_cover: true
+        #cover_title: TITLE TEXT
+        #cover_subtitle: SUBTITLE TEXT
+        #custom_template_path: TEMPLATES PATH
+        #
+        #toc_title: TOC TITLE TEXT
+        #heading_shift: false
+        #toc_level: 3
+        #ordered_chapter_level: 2
+        #excludes_children:
+        #    - 'release-notes/:upgrading'
+        #    - 'release-notes/:changelog'
+        #
+        #exclude_pages:
+        #    - 'bugs/'
+        #    - 'appendix/contribute/'
+        #convert_iframe:
+        #    - src: IFRAME SRC
+        #      img: POSTER IMAGE URL
+        #      text: ALTERNATE TEXT
+        #    - src: ...
+        #two_columns_level: 3
+        #
+        #render_js: true
+        #headless_chrome_path: headless-chromium
+        #
+        #output_path: any-place/document.pdf
+        #enabled_if_env: ENABLE_PDF_EXPORT
+        #
+        #debug_html: true
+        #show_anchors: true
+        #verbose: true
+  
+nav:
+  - 前言: index.md
+  - I 什么是测绘？:
+      - 1 概述: Ch01/index.md
+      - 2 为什么学习测绘: Ch01/Application_of_survey.md 
+      - 3 如何学习测绘: Ch01/How_to_learn_survey.md
+
+  - II 测绘开展的依据:
+      - 1 概述: Ch02/index.md   
+      - 2 测绘法律: Ch02/Law_of_survey.md
+      - 3 测绘技术规范: Ch02/survey_specification.md
+      - 4 问题: Ch02/Problem.md
+
+  - III 测绘综合能力:
+      - 1 概述: Ch03/index.md
+      - 2 大地测量: Ch03/geodesy.md     
+      - 3 海洋测量: Ch03/marine_surveying.md      
+  - IV 测量数据处理:
+      - 1 概述: Ch04/index.md
+      - 2 测量误差:  Ch04/measurement_error.md
+      - 3 测量不确定度评定:  Ch04/measurement_uncertainty.md
+      - 4 测量结果报告:  Ch04/measurement_results.md
+  - V 测绘工作实务:
+      - 1 概述: Ch05/index.md
+      - 2 测图工作: Ch05/survey_map.md
+      - 3 大地测量工作: Ch05/geodesy.md
+      - 4 工程测量工作: Ch05/engineer_survey.md 
+      - 5 期间核查: Ch05/period_checking.md  
+      - 6 型式评价: Ch05/type_review.md     
+  - VI 典型参考题目:
+      - 1 概述: Ch06/index.md 
+      - 2 测绘法律法规: Ch06/Problem_law.md
+      - 3 测量数据处理: Ch06/Problem_dataPro.md
+      - 4 测绘专业实务: Ch06/Problem_case.md 
+      
